@@ -1,0 +1,11 @@
+version: '3'
+services:
+  yarmlogs:
+    container_name: YARM_LOGS
+    image: logs
+    build:
+      context: logs
+    networks:
+      - net
+networks:
+  net:
